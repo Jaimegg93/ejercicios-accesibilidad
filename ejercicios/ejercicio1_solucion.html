@@ -21,28 +21,19 @@
             color: #33372C;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         }
-        .subtitle-fish {
+        .subtitle {
             margin: 20px;
             padding: 20px;
             font-size: 3.2em;
-            color: #fff;
+            color: #000000;
             border: 1px solid #ccc;
             border-radius: 5px;
         }
-        h2 {
-            margin: 20px;
-            padding: 20px;
-            font-size: 3.2em;
-            color: #444;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #525A44;
+            background-color: #c4e669;
             padding: 20px;
         }
 
@@ -65,7 +56,7 @@
 
         nav a {
             text-decoration: none;
-            color: #FFFFFF;
+            color:  #333;
             padding: 10px 15px;
             border-radius: 5px;
         }
@@ -88,20 +79,13 @@
         }
 
         .section-fish {
-            background-color: #557C56;
+            background-color: #8eaa8f;
         }
         .pet-container {
             display: flex;
             align-items: center;
         }
-        .pet-container-fish 
-        {   
-            display: flex;
-            align-items: center;
-            color: #FFFFFF;
 
-        }   
-        
         .pet-image {
             width: 100px;
             height: 100px;
@@ -120,8 +104,7 @@
 </head>
 <body>
     <header>
-        <img src="./img/logo.jpeg" alt="">
-        <title>Pets home</title>
+        <img src="./img/logo.jpeg" alt="Logo de la pagina pila chula">
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -134,25 +117,25 @@
     <div class="container">
     <section class="section-dogs">
         <div class="pet-container">
-        <h2 >Dogs</h2>
-            <img  class="pet-image" src="./img/dogs.jpeg" alt="foto precioso perro" >
+        <div class="subtitle">Dogs</div>
+        <img  class="pet-image" src="./img/dogs.jpeg" alt="foto del perro">
         <p>Dogs are known for their loyalty, intelligence, and playful nature. They come in various breeds and sizes, making them suitable for different lifestyles.</p>
         </div>
     </section>
 
     <section class="section-cat">
         <div class="pet-container">
-        <h2>Cats</h2>
-            <img  class="pet-image"  src="./img/cat.jpeg" alt="foto precioso gato" >
+        <div class="subtitle">Cats</div>
+        <img  class="pet-image"  src="./img/cat.jpeg"  alt="Foto Gato" >
         <p>Cats are independent creatures that can provide companionship and entertainment. They are known for their grace, agility, and ability to purr.</p>
         </div>
     </section>
 
     <section class="section-fish">
-        <div class="pet-container-fish">
-            <h2 class="subtitle-fish">Fish</h2>
-            <img class="pet-image"  src="./img/fish.jpeg" alt="foto precioso pez" >
-            <p>Fish are low-maintenance pets that can add a touch of tranquility to your home. They come in a wide variety of colors and shapes, and observing them can be relaxing.</p>
+        <div class="pet-container">
+        <div class="subtitle">Fish</div>
+        <img class="pet-image"  src="./img/fish.jpeg"  alt="Foto pescao" >
+        <p>Fish are low-maintenance pets that can add a touch of tranquility to your home. They come in a wide variety of colors and shapes, and observing them can be relaxing.</p>
         </div> 
     </section>
 </div>
