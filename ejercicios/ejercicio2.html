@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
 <html lang="en">
-=======
-<html>
->>>>>>> 602f49aaf16673320a4d10ff3515bfeb6a3e93ad
 <head>
 <meta charset="utf-8" />
 <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
@@ -16,11 +12,14 @@ body  
     justify-content: center;
     background-color: #e4f3c7;
 }
+h1{
+    text-align: center;
+}
 header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #727c60;
+            background-color: #b0b4a7;
             padding: 20px;
         }
 
@@ -59,7 +58,7 @@ header {
             text-align: center;
             font-size: 48px;
             font-weight: bold;
-            color: #33372C;
+            color: #4d5c34;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         }
         form {
@@ -113,11 +112,8 @@ header {
 </head>
 <body>
     <header>
-<<<<<<< HEAD
         <img src="./img/logo.jpeg" alt="Logo CIFP aviles">
-=======
-        <img src="./img/logo.jpeg" alt="Logo">
->>>>>>> 602f49aaf16673320a4d10ff3515bfeb6a3e93ad
+        <img src="./img/logo.jpeg" alt="Logo CIFP aviles">
         <title>Pets home</title>
         <nav>
             <ul>
@@ -128,25 +124,31 @@ header {
         </nav>
     </header>
 <div class="container">
-<div class="title">Contacto</div>
+<h1>Contacto</h1>
 <form action="" method="post">
 <p>
-<div >Nombre:</div> <input type="text"  />
+
+<label for="1">Nombre:<input  id="1" type="text"/></label>
 <br />
-<div >Apellidos:</div> <input type="text"  />
+<label for="2"> Apellidos: <input id="2" type="text"  /></label>
 <br />
-Gender:
+<fieldset>
+<legend>Gender:</legend>
+<label for="gender-male">Hombre</label>
 <input type="radio" name="gender" value="Hombre" id="gender-male"/> 
+<label for="gender-female">Mujer</label>
 <input type="radio" name="gender" value="Mujer" id="gender-female" /> 
+
 <br />
-Animal favorito:
-<select name="animal favorito">
+</fieldset>
+<label for="animal">Animal favorito:</label>
+<select name="animal favorito" id="animal">
 <option >Perro</option>
 <option >Gato</option>
 <option >Pez</option>
 </select>
 <br />
-<input type="submit"  />
+<input title= "subir" type="submit"/>
 </p>
 </form>
 </div>
